@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"> 
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Movie Quiz</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Movie Selector Quiz</h2>
+        
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button id="colorbtn" class="btn">Answer 1</button>
+                <button id="colorbtn" class="btn">Answer 2</button>
+                <button id="colorbtn" class="btn">Answer 3</button>
+                <button id="colorbtn" class="btn">Answer 4</button>
+            </div>
+
+        </div>
+
+        <div id="result-container" class="hide">
+            <p>The movie you are looking for is:  </p>
+            <p id='grade2'></p>
+            <script>
+               
+                let results=["Inglorious Basterds <br/> <img id='image' src ='inglourious-basterds.jpg'>","Up <br/> <img id='image' src='up.jpg'>", "Ferris Bueller's Day Off <br/> <img id='image' src='ferris-bueller.jpg'>","The Irishman <br/> <img id='image' src='the-irishman.jpg'>","The Pursuit of Happyness <br/> <img id='image' src='the-pursuit.jpg'>","Edward Scissorhands <br/> <img id='image' src='edward.jpg'>","Slumdog Millionaire <br/> <img id='image' src='slumdog.jpg'>","Julie and Julia <br/> <img id='image' src='julie-and-julia.jpg'>","Call Me By Your Name <br/> <img id='image' src='Call-me-by-your-name.jpg'>","Marriage Story <br/> <img id='image' src='marriage-story.jpg'>","Annie Hall <br/> <img id='image' src='annie-hall.jpg'>","Mulholland Dr. <br/> <img id='image' src='mulholland.jpg'>","American Psycho <br/> <img id='image' src='american-psycho.jpg'>","Blue Velvet <br/> <img id='image' src='blue-velvet.jpg'>","Goodfellas <br/> <img id='image' src='goodfellas.png'>","Caphernaum <br/> <img id='image' src='caphernaum.jpg'>","Scent of A Woman <br/> <img id='image' src='scent.jpg'>","A Clockwork Orange <br/> <img id='image' src='clockwork.jpg'>","Midnight in Paris <br/> <img id='image' src='midnight.jpg'>","Joker <br/> <img id='image' src='joker.jpg'>"]
+                let result2=results[Math.floor(Math.random() * results.length)];
+               
+                document.getElementById('grade2').innerHTML=result2
+                element.classList.remove(result2)
+    
+    
+                
+            </script>
+        </div>
+
+
+
+        <div class="controls">
+        
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+    
+</body>
+</html>
